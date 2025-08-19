@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const articleModel = require('../Model/articleModel')
 
 //List All Articles
 router.get('/',(req,res)=>{
