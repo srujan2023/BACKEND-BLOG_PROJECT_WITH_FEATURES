@@ -10,8 +10,8 @@ const ListArticles = async(req,res)=>{
 
    const ListSingleArticle = async(req,res)=>{
    try {
-    const Article = await articleModel.findById(req.params.articleId,req.body)
-    return res.json({Article});
+    const article = await articleModel.findById(req.params.articleId,req.body)
+    return res.json({article});
    } catch (error) {
     console.log(error);
    }
