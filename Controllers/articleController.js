@@ -2,8 +2,8 @@ const articleModel = require('../Model/articleModel')
 
 const ListArticles = async(req,res)=>{
    try {
-    const Article = await articleModel.find();
-    return res.json({Article})
+    const articles = await articleModel.find();
+    return res.json({articles})
    } catch (error) {
     console.log(error); 
    }}
