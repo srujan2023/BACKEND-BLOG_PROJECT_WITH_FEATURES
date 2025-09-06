@@ -23,7 +23,7 @@ app.get('/',(req,res)=>{
 
 
 app.use('/api/blog/articles',require('./routes/articleRoutes'))
-app.use('api/uploads',require('./routes/uploadRoutes'))
+app.use('/api/uploads',require('./routes/uploadRoutes'))
 
 
 //Public Routes
