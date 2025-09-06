@@ -23,9 +23,10 @@ app.get('/',(req,res)=>{
 
 
 app.use('/api/blog/articles',require('./routes/articleRoutes'))
-app.use('api/upload',require('./routes/uploadRoutes'))
+app.use('api/uploads',require('./routes/uploadRoutes'))
 
-//app.use('uploads',express.static('uploads'))
+
+//Public Routes
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
